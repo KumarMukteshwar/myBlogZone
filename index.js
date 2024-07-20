@@ -5,7 +5,7 @@ const userRouter = require('./Routes/blog');
 const cors = require('cors');
 const app = express();
 
-const PORT = process.env.PORT || "mongodb://localhost:27017/blogDB";
+const PORT = process.env.PORT;
 app.use(express.static("public/upload"))
 
 app.use(cors());
